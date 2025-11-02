@@ -73,5 +73,16 @@ Data Analyst | Power BI Developer
 
 ---
 
-## 📸 Dashboard Preview
-![Chocolate Sales Power BI Dashboard](Final.JPG)
+## 📸 Dashboard Screenshots
+
+### KPI Overview
+![KPI Overview](Screenshots/top_kpis.png)
+
+### Sales Trend & Order Status
+![Sales Trend](Screenshots/sales_trend_status.png)
+
+### Top 5 Products & Salesperson
+![Sales by Person](Screenshots/sales_by_person.png)
+
+### Full Dashboard Layout
+![Full Dashboard](Screenshots/dashboard_overview.png)
