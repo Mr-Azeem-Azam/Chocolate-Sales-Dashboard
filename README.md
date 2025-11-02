@@ -1,145 +1,169 @@
-🍫 Chocolate Sales Analysis Dashboard 2023 – Power BI Project by Muhammad Azeem
+# 🍫 Chocolate Sales Analysis Dashboard 2023 – Power BI Project by Muhammad Azeem
 
-📊 Project Overview
+## 📊 Project Overview
 
-This is my first Power BI project, built as part of my data analysis learning journey.
-The project showcases an end-to-end analysis process using Power BI — from dataset sourcing and cleaning in Excel to creating a professional dashboard with key business insights.
+This is my **first Power BI project**, created as part of my Data Analyst learning journey.
+It represents an **end-to-end analysis process** — from sourcing and cleaning data in Excel to building an interactive Power BI dashboard with business insights.
 
-The dataset represents chocolate sales data collected from GitHub, cleaned and prepared in Excel, and finally transformed into an interactive Power BI dashboard.
+The dataset represents chocolate sales records collected from GitHub, cleaned in Excel, and visualized in Power BI.
 
-🧾 Dataset Details
+---
 
-Source: GitHub (Chocolate Sales Dataset)
+## 🧾 Dataset Details
 
-Preparation: Excel (Data cleaning, formatting, and KPI calculation)
+* **Source:** Public dataset from GitHub
+* **Preparation:** Excel (data cleaning, formatting, and KPI setup)
+* **Visualization:** Power BI (interactive dashboard and DAX measures)
 
-Visualization: Power BI (Interactive Dashboard)
+---
 
-⚙️ Tools & Technologies
+## ⚙️ Tools & Technologies
 
-Microsoft Excel → Data cleaning & preprocessing
+* **Microsoft Excel** → Data cleaning & preprocessing
+* **Power BI Desktop** → DAX measures, visuals, and interactivity
+* **GitHub** → Project hosting and portfolio sharing
 
-Power BI Desktop → Data modeling, DAX measures, and dashboard visualization
+---
 
-GitHub → Project hosting and portfolio sharing
+## 💵 Currency Used
 
-💵 Currency Used
+* **Currency:** USD ($)
+  *(Chosen for international portfolio visibility. Local dashboards can use PKR ₨ as needed.)*
 
-Currency: USD ($)
-(For international portfolio visibility. Local dashboards can use PKR (₨) as needed.)
+---
 
-📈 Key Insights
+## 📈 Key Insights
 
-Total Sales: $27,990,857
+1. **Total Sales:** $27,990,857
+2. **Delivery Rate:** 83%
+3. **Top 2 Sales Representatives** contribute **~15%** to total revenue
+4. **Sales Trend:** Strong performance in mid-year months
+5. **Order Status:** 83% of all orders successfully delivered
 
-Delivery Rate: 83%
+---
 
-Top 2 Sales Representatives contribute ~15% to overall revenue
+## 🎨 Dashboard Design
 
-Sales Trend: Noticeable increase in mid-year period
+* Clean beige theme with chocolate color accents (#6B4226, #D7C7AD, #F8F4E3)
+* Rounded visuals (corner radius = 12)
+* KPI cards for Total Sales, Orders, and Delivery Rate
+* Donut and bar charts for category-based breakdowns
+* Line chart for monthly sales trends
 
-Order Status Distribution: Delivered orders dominate with a minor cancelled rate
+---
 
-🎨 Dashboard Design
+## 💡 Problem Statement
 
-Clean, minimalist beige background
+The chocolate company wanted to track **sales performance and delivery efficiency** across products and salespersons.
+They needed to identify:
 
-Rounded visuals (radius = 12)
+* Which products sell best
+* Which salespersons generate most revenue
+* Delivery performance and order status
+* Overall revenue and sales trends over time
 
-Line chart with soft shaded area
+---
 
-Donut and bar charts for categorical insights
+## 🧩 Case Study – Chocolate Sales Dashboard 2023
 
-KPI cards highlighting major metrics (Sales, Delivery Rate, Orders)
+### 🧾 Dataset Overview
 
-💡 Problem Statement
+The dataset contained **4,998 rows and 7 columns**:
+`Date`, `Product`, `Boxes`, `Amount`, `Salesperson`, `Country`, and `Order Status`.
+It was cleaned in Excel before importing into Power BI.
 
-The chocolate company wanted to analyze its overall sales performance and delivery efficiency across different products and salespersons.
-They needed to identify performance gaps, best-selling products, and revenue contribution by each salesperson.
+---
 
-🧩 Case Study – Chocolate Sales Dashboard 2023
-🧾 Dataset Overview
+### ⚙️ Process & Steps
 
-The dataset contained 4,998 rows and 7 columns, including Date, Product, Boxes, Amount, Salesperson, Country, and Order Status.
-The data was originally downloaded from a public sample dataset (GitHub source) and then cleaned and formatted in Excel before loading into Power BI.
+#### 1️⃣ Data Cleaning (Excel)
 
-⚙️ Process & Steps
-1️⃣ Data Cleaning (Excel)
+* Removed null values & duplicates
+* Verified numeric columns (Boxes, Amount)
+* Saved cleaned data for Power BI import
 
-Removed null values and ensured consistent formatting
+#### 2️⃣ Data Modeling (Power BI)
 
-Verified numeric columns (Boxes, Amount)
+Created key **DAX measures**:
 
-Saved final dataset for Power BI import
-
-2️⃣ Data Modeling (Power BI)
-
-Created DAX measures for key KPIs:
-
+```
 Total Sales = SUM(Amount)
-
 Total Boxes = SUM(Boxes)
-
 Total Orders = COUNTROWS(Data)
+Delivery Rate = DIVIDE([Delivered Orders], [Total Orders])
+Average Order Value = DIVIDE(SUM(Amount), COUNTROWS(Data))
+```
 
-Delivery Rate = Delivered Orders / Total Orders
+#### 3️⃣ Dashboard Design
 
-Average Order Value = SUM(Amount)/COUNTROWS(Data)
+* Used a chocolate-themed color palette
+* Added visuals:
 
-Added calculated columns and proper data types.
+  * Line Chart → Monthly Sales Trend
+  * Donut Chart → Order Status Breakdown
+  * Bar Chart → Top 5 Products by Sales
+  * Horizontal Bar → Sales by Salesperson
+  * KPI Cards → Sales, Orders, Delivery Rate
 
-3️⃣ Dashboard Design
+---
 
-Used a chocolate-themed color palette #6B4226, #D7C7AD, #F8F4E3.
-Included visuals:
+## 📊 Key Insights
 
-Line Chart → Monthly Sales Trend
+* **Delivered Orders:** 83% (strong fulfillment rate)
+* **Cancelled Orders:** 4.5% (needs improvement)
+* **Top 2 Salespersons:** Generated 15% of revenue
+* **Best-Selling Product:** *Choco Coated Almonds*
+* **Peak Sales Months:** *April–July*
 
-Donut Chart → Order Status Breakdown
+---
 
-Bar Chart → Top 5 Products by Sales
+## 📸 Dashboard Screenshots
 
-Horizontal Bar → Sales by Salesperson
+### KPI Overview
 
-Scatter Chart → Boxes vs Sales
+![KPI Overview](Screenshots/top_kpis.png)
 
-KPI cards (Total Sales, Total Orders, Delivery Rate, etc.)
+### Sales Trend & Order Status
 
-📈 Key Insights
+![Sales Trend](Screenshots/sales_trend_status.png)
 
-Delivered Orders: 83% of all orders (Strong fulfillment rate)
+### Top 5 Products & Salesperson
 
-Cancelled Orders: 4.5% — may indicate product unavailability
+![Sales by Person](Screenshots/sales_by_person.png)
 
-Top 2 Salespersons: Contribute 15% of total revenue
+### Full Dashboard Layout
 
-Best-Selling Product: Choco Coated Almonds
+![Full Dashboard](Screenshots/dashboard_overview.png)
 
-Peak Sales Months: April–July, showing high seasonal demand
+---
 
-🏁 Outcome
+## 🏁 Outcome
 
-This dashboard provides an end-to-end business view of chocolate sales — helping management quickly identify performance gaps, best products, and efficient salespersons.
-The project demonstrates practical Power BI dashboard design, data cleaning, and insight extraction skills.
+This dashboard provides a **complete business overview**, helping management track:
 
-📸 Dashboard Screenshots
-KPI Overview
+* Sales performance
+* Order fulfillment
+* Product and salesperson efficiency
+* Seasonal revenue trends
 
-Sales Trend & Order Status
+It demonstrates **practical Power BI dashboard design, data cleaning, and analysis skills**.
 
-Top 5 Products & Salesperson
+---
 
-Full Dashboard Layout
+## 📂 Files Included
 
-📂 Files Included
-File Type	Description
-📘 Chocolate_Sales_2023.xlsx	Cleaned Excel dataset
-📊 Chocolate_Sales_Dashboard_2023.pbix	Final Power BI dashboard
-🖼️ Screenshots/	Dashboard preview images
-📄 README.md	Project documentation & insights
-🧠 Author
+| File Type                                | Description                      |
+| ---------------------------------------- | -------------------------------- |
+| 📘 `Chocolate_Sales_2023.xlsx`           | Cleaned Excel dataset            |
+| 📊 `Chocolate_Sales_Dashboard_2023.pbix` | Final Power BI dashboard         |
+| 🖼️ `Screenshots/`                       | Dashboard preview images         |
+| 📄 `README.md`                           | Project documentation & insights |
 
-Muhammad Azeem
-Data Analyst | Power BI Developer
+---
+
+## 🧠 Author
+
+**Muhammad Azeem**
+*Data Analyst | Power BI Developer*
 📍 Pakistan
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/muhammad-azeem-06b799231/)
